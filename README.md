@@ -1,7 +1,7 @@
 # Smart-Lya
 
 ## Description:
-The goal of the PINN model is to predict the flux and absorption coefficient to satisfy the Radiative Transfer Equation below: <br />
+The goal of the PINN model is to predict the flux and adjust absorption coefficient to satisfy the Radiative Transfer Equation below: <br />
 
   &nbsp; **∂I/∂x = -α(x) * I(x) where I(x) = F(x) / (c * λ)** <br />
   
@@ -11,8 +11,6 @@ The goal of the PINN model is to predict the flux and absorption coefficient to 
   &ensp; &ensp; α(x): absorption coefficient *(1/cm)* <br />
   &ensp; &ensp; c: speed of light *(Å)* <br />
   &ensp; &ensp; λ: wavelength of Lyman-alpha line *(Å)* <br />
-
-The absorption coefficient is a learnable parameter, so the model will simultaneously predict the flux and adjust the absorption coefficient to satisfy the equation above. 
 
  ## Model Details:
    <ins>Input</ins>: normalized wavelengths that cover the Lyman-alpha line </br>
